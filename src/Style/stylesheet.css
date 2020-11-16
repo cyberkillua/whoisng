@@ -1,0 +1,24 @@
+#wrapper {
+  position: relative;
+  width: 1440px !important;
+  height: 1024px;
+  margin: auto;
+  background: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+    #wrapper {
+        
+        width: 375px !important;
+        height: 812px;
+        margin: 0px;
+        border-radius: 0px;
+
+    }
+    body{
+        margin: 0px;
+    }
+    html{
+        margin: 0px;
+    }
+}
