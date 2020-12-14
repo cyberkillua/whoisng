@@ -33,9 +33,9 @@ const Display = styled.section`
 const Displaytable = ({ data }) => {
   // console.log(data.body)
   // {data === undefined? <Displaytable />:  <Displaytable data={ data } />}
-  const { status, body } = data;
+  const { body } = data;
   // const {domain, available } = body
-  console.log(body);
+  // console.log(body);
 
   return (
     <Display>
@@ -48,6 +48,7 @@ const Displaytable = ({ data }) => {
               <h1>This domain is already registered</h1>
               <h2>Registrant Contact Information:</h2>
               <table>
+                <tbody>
                 <tr>
                   <td> Name</td>
                   <td> {body.registrant_name}</td>
@@ -72,6 +73,7 @@ const Displaytable = ({ data }) => {
                   <td>Updated On</td>
                   <td>{body.updated_date}</td>
                 </tr>
+                </tbody>
               </table>
             </>
           )}
