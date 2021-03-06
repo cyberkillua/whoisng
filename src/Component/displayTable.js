@@ -18,9 +18,12 @@ const Display = styled.section`
   table {
     margin-left: auto;
     margin-right: auto;
+    
+    text-align: start;
     td {
       padding: 10px;
-      border: 2px #94aa0f solid;
+      
+     
     }
   }
 `;
