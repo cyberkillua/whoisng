@@ -110,7 +110,7 @@ const Body = () => {
       </div>
       <div className="box">
         <input
-          type="text"
+          type="search"
           value={q}
           onChange={(e) => setQ(e.target.value)}
           placeholder="Enter domain or IP address"

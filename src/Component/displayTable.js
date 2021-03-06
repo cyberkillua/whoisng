@@ -58,7 +58,7 @@ const Displaytable = ({ data }) => {
                   </tr>
                   <tr>
                     <td>Expires On</td>
-                    <td>{body.expiry_date}</td>
+                    <td>{new Date(body.expiry_date).toDateString()}</td>
                   </tr>
                   <tr>
                     <td>Registered On</td>
