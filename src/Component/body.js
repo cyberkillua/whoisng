@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import Displaytable from "./displayTable";
+import Load from "./Loader";
 
 const Bodysection = styled.section`
   margin-top: 50px;
@@ -88,13 +89,16 @@ const Bodysection = styled.section`
 const Body = () => {
   const [data, setData] = useState([]);
   const [q, setQ] = useState("");
+  const [loaded, setLoaded] = useState(false);
 
   function getData() {
     console.log(q);
+    setLoaded(true);
     fetch("https://whoisngapi.herokuapp.com/api/v1/whois/" + q)
       .then((res) => res.json())
       .then((result) => {
         setData(result);
+        setLoaded(false);
         console.log(result);
       });
   }
@@ -119,8 +123,7 @@ const Body = () => {
           <span className="xx">Search</span>
         </button>
       </div>
-
-      <Displaytable data={data} />
+      {loaded ? <Load /> : <Displaytable data={data} />}
     </Bodysection>
   );
 };
