@@ -5,6 +5,14 @@ import Load from "./Loader";
 
 const Bodysection = styled.section`
   margin-top: 50px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  @media (max-width: 768px) {
+    width: 100%;
+    align-content: flex-start;
+    margin-left: 10px;
+  }
   .pp {
     margin: 10px;
     height: 38px;
@@ -17,20 +25,27 @@ const Bodysection = styled.section`
     text-align: center;
 
     @media (max-width: 768px) {
+      margin-left: 0;
       height: 15px;
       border-radius: nullpx;
       font-size: 10px;
       line-height: 15px;
+      text-align: left;
     }
   }
   .box {
-    margin-top: 20px;
+    margin-top: 40px;
     display: flex;
     justify-content: center;
     @media (max-width: 768px) {
+      width: 100%;
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      justify-content: space-between;
     }
     input {
-      width: 50%;
+      width: 45%;
       height: 70px;
       background: #f1f8ee;
       border: 0.4px solid #c0c0c0;
@@ -68,11 +83,12 @@ const Bodysection = styled.section`
       background: #89c93d;
       border-radius: 5px;
       border: 0px;
-      margin-left: 20px;
+      margin-left: 10px;
       @media (max-width: 768px) {
         height: 50px;
         width: 100px;
-        margin-left: 5px;
+        margin-left: 0;
+        margin-right: 20px;
         border-radius: 5px;
       }
       .xx {

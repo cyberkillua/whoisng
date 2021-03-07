@@ -9,7 +9,7 @@ const Nav = styled.nav`
   margin-left: 100px;
   background: #ffffff;
   @media (max-width: 768px) {
-    margin-left: 20px;
+    margin-left: 10px;
     height: 84px;
     width: 100%;
     border-radius: 0px;
