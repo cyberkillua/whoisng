@@ -6,7 +6,7 @@ const Display = styled.section`
   font-family: Poppins;
   font-style: normal;
   line-height: 37px;
-  color: #3b3d2d;
+  color: #ba7cd1;
   text-align: center;
   margin-top: 100px;
   @media (max-width: 768px) {
@@ -18,12 +18,10 @@ const Display = styled.section`
   table {
     margin-left: auto;
     margin-right: auto;
-    
+
     text-align: start;
     td {
       padding: 10px;
-      
-     
     }
   }
 `;

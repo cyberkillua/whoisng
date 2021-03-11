@@ -21,9 +21,11 @@ const Bodysection = styled.section`
     font-weight: 600;
     font-size: 25px;
     line-height: 37px;
-    color: #3b3d2d;
+    color: #ffffff;
     text-align: center;
-
+    .purple {
+      color: #ba7cd1;
+    }
     @media (max-width: 768px) {
       margin-left: 0;
       height: 15px;
@@ -44,13 +46,22 @@ const Bodysection = styled.section`
       margin-right: auto;
       justify-content: space-between;
     }
+
     input {
       width: 45%;
       height: 70px;
       background: #f1f8ee;
+      padding: 10px 20px;
       border: 0.4px solid #c0c0c0;
       box-sizing: border-box;
       border-radius: 5px;
+      font-family: Poppins;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 27px;
+      letter-spacing: 0em;
+
       @media (max-width: 768px) {
         height: 50px;
         width: 60%;
@@ -80,7 +91,7 @@ const Bodysection = styled.section`
     button {
       width: 154px;
       height: 70px;
-      background: #89c93d;
+      background: linear-gradient(180deg, #7590d4 0%, #ce77d1 100%);
       border-radius: 5px;
       border: 0px;
       margin-left: 10px;
@@ -122,7 +133,8 @@ const Body = () => {
   return (
     <Bodysection>
       <div className="pp">
-        Domain Names Search, Registration and Availability in Nigeria.
+        Domain Names Search, <span className="purple">Registration</span> and{" "}
+        <span className="purple">Availability</span> in Nigeria.
       </div>
       <div className="box">
         <input
