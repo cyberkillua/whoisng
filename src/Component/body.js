@@ -10,7 +10,7 @@ const Bodysection = styled.section`
   margin-left: auto;
   margin-right: auto;
   @media (max-width: 768px) {
-    margin-top: 150px;
+    margin-top: 70px;
     
   }
   .pp {
