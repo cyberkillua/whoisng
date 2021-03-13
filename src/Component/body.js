@@ -59,7 +59,7 @@ const Bodysection = styled.section`
       width: 45%;
       height: 70px;
       background: #f1f8ee;
-      padding: 10px 20px;
+      padding: 0 20px;
       border: 0.4px solid #c0c0c0;
       box-sizing: border-box;
       border-radius: 5px;
@@ -74,13 +74,12 @@ const Bodysection = styled.section`
         height: 45px;
         width: 95%;
         display: block;
+
         margin-left: auto;
         margin-right: auto;
         border-radius: 5px;
       }
       ::placeholder {
-        height: 29.076923370361328px;
-        width: 241px;
         font-family: Poppins;
         font-size: 18px;
         font-style: normal;
@@ -91,10 +90,7 @@ const Bodysection = styled.section`
         padding-left: 10px;
         color: #838282;
         @media (max-width: 768px) {
-          padding-left: 2px;
-          height: 15px;
-          width: 134px;
-          border-radius: nullpx;
+          padding-left: 1px;
           font-size: 10px;
           line-height: 15px;
         }
