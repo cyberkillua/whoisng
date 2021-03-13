@@ -13,7 +13,7 @@ const Bodysection = styled.section`
     margin-top: 20px;
   }
   .pp {
-    margin: 10px;
+    margin: 30px;
     font-family: Poppins;
     font-style: normal;
     font-weight: 600;
@@ -37,7 +37,9 @@ const Bodysection = styled.section`
       }
     }
     @media (max-width: 768px) {
-      margin-left: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 90%;
       border-radius: nullpx;
       font-size: 10px;
       line-height: 15px;
@@ -72,7 +74,7 @@ const Bodysection = styled.section`
 
       @media (max-width: 768px) {
         height: 45px;
-        width: 95%;
+        width: 90%;
         display: block;
 
         margin-left: auto;

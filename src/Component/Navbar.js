@@ -18,7 +18,7 @@ const Nav = styled.nav`
     padding-top: 40px;
     padding-left: 100px;
     @media (max-width: 768px) {
-      padding-left: 10px;
+      padding-left: 15px;
       img {
         height: 23.112464904785156px;
         width: 100px;
