@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import Displaytable from "./displayTable";
 import Load from "./Loader";
+import globe from "../imgs/globe.svg";
 
 const Bodysection = styled.section`
   margin-top: 50px;
@@ -9,13 +10,11 @@ const Bodysection = styled.section`
   margin-left: auto;
   margin-right: auto;
   @media (max-width: 768px) {
-    width: 100%;
-    align-content: flex-start;
-    margin-left: 10px;
+    margin-top: 150px;
+    
   }
   .pp {
     margin: 10px;
-    height: 38px;
     font-family: Poppins;
     font-style: normal;
     font-weight: 600;
@@ -23,16 +22,29 @@ const Bodysection = styled.section`
     line-height: 37px;
     color: #ffffff;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     .purple {
       color: #ba7cd1;
     }
+    img {
+      width: 35px;
+      height: 35px;
+      margin-left: 5px;
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
     @media (max-width: 768px) {
-      margin-left: 0;
-      height: 15px;
+      margin-left: 10px;
       border-radius: nullpx;
       font-size: 10px;
       line-height: 15px;
       text-align: left;
+      display: block;
+
     }
   }
   .box {
@@ -42,9 +54,7 @@ const Bodysection = styled.section`
     @media (max-width: 768px) {
       width: 100%;
       margin-top: 20px;
-      margin-left: auto;
-      margin-right: auto;
-      justify-content: space-between;
+      display: block;
     }
 
     input {
@@ -63,8 +73,11 @@ const Bodysection = styled.section`
       letter-spacing: 0em;
 
       @media (max-width: 768px) {
-        height: 50px;
-        width: 60%;
+        height: 45px;
+        width: 95%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
         border-radius: 5px;
       }
       ::placeholder {
@@ -80,6 +93,7 @@ const Bodysection = styled.section`
         padding-left: 10px;
         color: #838282;
         @media (max-width: 768px) {
+          padding-left: 2px;
           height: 15px;
           width: 134px;
           border-radius: nullpx;
@@ -98,9 +112,12 @@ const Bodysection = styled.section`
       @media (max-width: 768px) {
         height: 50px;
         width: 100px;
-        margin-left: 0;
-        margin-right: 20px;
+        margin-top: 20px;
+        text-align: center;
         border-radius: 5px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
       }
       .xx {
         font-family: Poppins;
@@ -133,8 +150,13 @@ const Body = () => {
   return (
     <Bodysection>
       <div className="pp">
-        Domain Names Search, <span className="purple">Registration</span> and{" "}
-        <span className="purple">Availability</span> in Nigeria.
+        <div>
+          Domain Names Search, <span className="purple">Registration </span>
+          and <span className="purple"> Availability</span> Anywhere!
+        </div>
+        <div>
+          <img src={globe} alt="globe" />
+        </div>
       </div>
       <div className="box">
         <input

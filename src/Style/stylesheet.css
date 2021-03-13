@@ -4,15 +4,13 @@
   margin: auto;
   background-image: url("../imgs/Taieri.png");
 }
-/* #wrapper::before {
-  content: url("../imgs/Taieri.png");
-  position: absolute;
-  top: 166px;
-  bottom: 0;
-  right: 0;
-  left: 0;
-} */
-
+@media (max-width: 768px) {
+  #wrapper {
+    background-image: url("../imgs/Taierimobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
 .loadd {
   display: flex;
   justify-content: center;
@@ -20,8 +18,4 @@
 }
 body {
   background: #0d0707;
-}
-input[type="text"] {
-  
-  margin: 8px 0;
 }
