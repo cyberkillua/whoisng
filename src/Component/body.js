@@ -131,7 +131,8 @@ const Body = () => {
   const [q, setQ] = useState("");
   const [loaded, setLoaded] = useState(false);
 
-  function getData() {
+  function getData(e) {
+    e.preventDefault();
     console.log(q);
     setLoaded(true);
     fetch("https://whoisngapi.herokuapp.com/api/v1/whois/" + q)
@@ -155,19 +156,18 @@ const Body = () => {
         </div>
       </div>
       <div className="box">
-        <input
-          type="url"
-          value={q}
-          onChange={(e) => setQ(e.target.value)}
-          placeholder="Enter domain or IP address"
-        />
-        <button
-          onClick={() => {
-            getData();
-          }}
-        >
-          <span className="xx">Search</span>
-        </button>
+        <form onSubmit={getData}>
+          <input
+            required
+            // type="url"
+            value={q}
+            onChange={(e) => setQ(e.target.value)}
+            placeholder="Enter domain or IP address"
+          />
+          <button>
+            <span className="xx">Search</span>
+          </button>
+        </form>
       </div>
       {loaded ? <Load /> : <Displaytable data={data} />}
     </Bodysection>
