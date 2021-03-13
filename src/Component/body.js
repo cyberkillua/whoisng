@@ -154,7 +154,7 @@ const Body = () => {
       </div>
       <div className="box">
         <input
-          type="search"
+          type="url"
           value={q}
           onChange={(e) => setQ(e.target.value)}
           placeholder="Enter domain or IP address"
