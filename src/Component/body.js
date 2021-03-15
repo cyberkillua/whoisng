@@ -62,7 +62,7 @@ const Bodysection = styled.section`
         display: block;
       }
       input {
-        width: 45%;
+        width: 50%;
         height: 70px;
         background: #f1f8ee;
         padding: 0 20px;
